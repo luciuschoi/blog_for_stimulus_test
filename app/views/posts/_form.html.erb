@@ -14,12 +14,12 @@
   <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title, class: 'form-control', data: {target: 'post-form.postTitle', action: "keyup->post-form#countChars focus->post-form#focusing blur->post-form#blurring" } %> 
-    <span data-target="post-form.count"></span>
+    <div data-target="post-form.count" class='text-right'></div>
   </div>
 
   <div class="field">
     <%= form.label :content %>
-    <%= form.text_area :content, class: 'form-control' %>
+    <%= form.text_area :content, rows: 5, class: 'form-control' %>
   </div>
 
   <div class="actions">
