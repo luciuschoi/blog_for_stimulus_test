@@ -8,7 +8,6 @@ export default class extends Controller {
     }
 
     countChars() {
-        // console.log(this.postTitleTarget.value)
         let title = this.postTitleTarget
         let count = title.value.length
         if(count === 1){
@@ -16,7 +15,6 @@ export default class extends Controller {
         } else {
             this.countTarget.textContent = `${count} characters`
         }
-        // this.postTitleTarget.classList.add('text-yellow')
     }
 
     focusing() {
