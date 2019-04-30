@@ -22,11 +22,11 @@ export default class extends Controller {
         }
     }
 
-    focusing() {
-        this.postTitleTarget.classList.add('background-yellow')
-    }
+    // focusing() {
+    //     this.postTitleTarget.classList.add('background-yellow')
+    // }
 
-    blurring() {
-        this.postTitleTarget.classList.remove('background-yellow')
-    }
+    // blurring() {
+    //     this.postTitleTarget.classList.remove('background-yellow')
+    // }
 }

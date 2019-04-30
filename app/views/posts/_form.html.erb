@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title, class: 'form-control', data: {target: 'post-form.postTitle', action: "keyup->post-form#countChars focus->post-form#focusing blur->post-form#blurring" } %> 
+    <%= form.text_field :title, class: 'form-control', data: {target: 'post-form.postTitle', action: "keyup->post-form#countChars" } %> 
     <div data-target="post-form.count" class='text-right'></div>
   </div>
 
