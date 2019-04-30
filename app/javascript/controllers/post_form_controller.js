@@ -14,14 +14,19 @@ export default class extends Controller {
             this.countTarget.textContent = '1 character'
         } else {
             this.countTarget.textContent = `${count} characters`
+            if(count > 150){
+                this.countTarget.classList.add('text-red')
+            } else {
+                this.countTarget.classList.remove('text-red')
+            }
         }
     }
 
     focusing() {
-        this.postTitleTarget.classList.add('text-yellow')
+        this.postTitleTarget.classList.add('background-yellow')
     }
 
     blurring() {
-        this.postTitleTarget.classList.remove('text-yellow')
+        this.postTitleTarget.classList.remove('background-yellow')
     }
 }
