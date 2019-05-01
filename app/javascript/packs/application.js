@@ -18,5 +18,5 @@ require("channels")
 
 import "../src/stylesheets/application"
 import "controllers"
-import "jquery"
 import 'bootstrap/dist/js/bootstrap';
+import 'sweetalert2/dist/sweetalert2.min';

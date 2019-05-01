@@ -10,13 +10,13 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody data-controller='posts'>
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', post, data: { action: 'click->posts#confirm' } %></td>
       </tr>
     <% end %>
   </tbody>

@@ -1,10 +1,12 @@
 import { Controller } from 'stimulus'
+import Swal from 'sweetalert2'
 
 export default class extends Controller {
     static targets = [ "postTitle", "count"]
 
     connect() {
         this.countChars()
+        Swal.fire('SweetAlert2')
     }
 
     countChars() {
@@ -21,12 +23,4 @@ export default class extends Controller {
             }
         }
     }
-
-    // focusing() {
-    //     this.postTitleTarget.classList.add('background-yellow')
-    // }
-
-    // blurring() {
-    //     this.postTitleTarget.classList.remove('background-yellow')
-    // }
 }
